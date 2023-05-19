@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - runs printf function
+* main - Prints printf function
 *
 * Description - prints "the main function"
 *
