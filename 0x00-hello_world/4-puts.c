@@ -1,12 +1,15 @@
 #include <stdio.h>
 
-/*
- * main - use puts to print
- * Return: 0
+/**
+ * main - Prints puts
+ *
+ * Description: prints "function followed by a new line"
+ *
+ * Return: 0 success
  */
 
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
-	return 0;
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
