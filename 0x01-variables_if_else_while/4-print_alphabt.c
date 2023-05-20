@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main - Prints the alphabet without 
+* main - Prints the alphabet
 *
 * Description - prints "prints the alphabet in q&e"
 *
