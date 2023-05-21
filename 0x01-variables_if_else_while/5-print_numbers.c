@@ -15,7 +15,7 @@ int main(void)
 
 	for (number = 0; number < 10; number++)
 	{
-		putchar(number);
+		putchar('0' + number);
 	}
 
 	putchar('\n');
