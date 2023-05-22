@@ -2,21 +2,22 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main - Prints main
+* main - Prints the alphabet in lowercase
 *
-* Description - prints "single digit numbers of base 10 starting from 9"
+* Description - prints "prints the alphabet in lowercase"
 *
 * Return: 0 success
 */
 
 int main(void)
 {
-	int number;
+	char za;
 
-	for (number = 9; number >= 0; number--)
+	for (za = 'z'; za >= 'a'; za--)
 	{
-		putchar('0' + number);
+		putchar(za);
 	}
+
 	putchar('\n');
 
 	return (0);
