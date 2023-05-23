@@ -20,7 +20,7 @@ int main(void)
 			putchar('0' + oneDigit);
 			putchar('0' + twoDigit);
 
-		if (oneDigit != 8; twoDigit != 9)
+		if (oneDigit != 8 || twoDigit != 9)
 		{
 			putchar (',');
 			putchar (' ');
