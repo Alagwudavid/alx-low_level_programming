@@ -10,15 +10,21 @@
 
 int main(void)
 {
-	int single;
+	int oneDigit;
+	int twoDigit;
 
-	for (single = 0; single < 10; single++)
+	for (oneDigit = 0; oneDigit < 9; oneDigit++)
 	{
-		putchar('0' + single);
-		if (single != 9)
+		for (twoDigit = oneDigit + 1; oneDigit < 10; oneDigit++)
+		{
+			putchar('0' + oneDigit);
+			putchar('0' + twoDigit);
+
+		if (oneDigit != 8; twoDigit != 9)
 		{
 			putchar (',');
 			putchar (' ');
+		}
 		}
 	}
 	putchar('\n');
