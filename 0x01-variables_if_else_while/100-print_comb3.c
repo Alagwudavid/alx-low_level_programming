@@ -15,10 +15,10 @@ int main(void)
 
 	for (oneDigit = 0; oneDigit < 9; oneDigit++)
 	{
-		for (twoDigit = oneDigit + 1; oneDigit < 10; oneDigit++)
+		for (twoDigit = oneDigit + 1; twoDigit < 10; twoDigit++)
 		{
-			putchar('0' + oneDigit);
-			putchar('0' + twoDigit);
+			putchar(oneDigit + '0');
+			putchar(twoDigit + '0');
 
 		if (oneDigit != 8 || twoDigit != 9)
 		{
