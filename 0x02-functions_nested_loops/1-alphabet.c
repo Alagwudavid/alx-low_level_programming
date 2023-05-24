@@ -11,7 +11,12 @@
 
 int main(void)
 {
-	_putchar('abcdefghijklmnopqrstuvwxyz');
+	char letter = 'a';
+	
+	while (letter <= 'z') {
+    		_putchar(letter);
+		letter++;
+	}
 	_putchar ('\n');
 	return (0);
 }
