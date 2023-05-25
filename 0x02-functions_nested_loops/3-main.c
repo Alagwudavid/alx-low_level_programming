@@ -1,11 +1,15 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
- */
-int main(void)
+* _islower - prints and checks for lowercase character
+*
+* Description - prints a function that checks for lowercase character
+*
+* Return: 0 success
+*/
+
+int _isalpha(int c)
 {
     int r;
 
