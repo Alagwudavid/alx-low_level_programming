@@ -20,4 +20,31 @@ void print_alphabet_x10(void);
 /* prototype for _islower */
 int _islower(int c);
 
+/* prototype for _isalpha */
+int _isalpha(int c);
+
+/* prototype for print_sign */
+int print_sign(int n);
+
+/* prototype for _abs */
+int _abs(int);
+
+/* prototype for print_last_digit */
+int print_last_digit(int);
+
+/* prototype for jack_bauer */
+void jack_bauer(void);
+
+/* prototype for times_table */
+void times_table(void);
+
+/* prototype for add */
+int add(int, int);
+
+/* prototype for print_to_98 */
+void print_to_98(int n);
+
+/* prototype for print_times_table */
+void print_times_table(int n);
+
 #endif /* MAIN_H */

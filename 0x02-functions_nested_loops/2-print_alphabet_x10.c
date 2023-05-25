@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
-* print_alphabet - prints the az in lowercase, followed by a new line 10x.
+* print_alphabet_x10 - prints print_alphabet_x10, followed by a new line 10x.
 *
-* Description - prints _putchar twice
+* Description - prints a-z 10x with new line
 *
 * Return: 0 success
 */
