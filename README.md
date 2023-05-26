@@ -7,5 +7,12 @@ Dir 2
 Dir 3
 > 0x02-functions_nested_loops
 
+Dir 4
+> 0x04-more_functions_nested_loops
+
 Documentation for directory
 > README.md
+
+| Author | David Alagwu |
+|----------|----------|
+| Source | Alx Software Engineering Training |
