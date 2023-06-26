@@ -3,7 +3,7 @@
 #include <stdlib>
 
 /*
- * main - initialize variable of type struct dog
+ * init_dog - Initialize variable of type struct dog
  * @d: A dog structure.
  * @name: The name of the dog.
  * @age: The age of the dog.
