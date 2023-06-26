@@ -2,10 +2,12 @@
 #define _HEADER_
 
 /**
- * Description - Define a new type struct dog
+ * struct dog - Structure for dog
  * @name: dog name, type = char *
  * @age: dog age, type = float
  * @owner: dog owner, type = char *
+ *
+ * Description - Define a new type struct dog
  */
 
 struct dog {
@@ -17,6 +19,7 @@ struct dog {
 /**
  * dog_t - typedef for structure
  */
+typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
