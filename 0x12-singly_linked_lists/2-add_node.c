@@ -10,23 +10,41 @@
   * Return: The address of the new list or NULL if it failed
   */
 list_t *add_node(list_t **head, const char *str){
-	if (str == NULL)
-		return NULL;
+	list_t *temp;
 
-		list_t *new_node = (list_t *)malloc(sizeof(list_t));
-	if (new_node == NULL)
-		return NULL;
-
-		new_node->str = strdup(str);
-	if (new_node->str == NULL)
+	if (head != NULL && str != NULL)
 	{
-		free(new_node);
-		return NULL;
+		temp = malloc(sizeof(list_t));
+		if (temp == NULL)
+			return (NULL);
+
+		temp->str = strdup(str);
+		temp->len = _strlen(str);
+		temp->next = *head;
+
+		*head = temp;
+
+		return (temp);
 	}
 
-	new_node->len = strlen(str);
-	new_node->next = *head;
-	*head = new_node;
+	return (0);
+}
 
-	return new_node;
+/**
+  * _strlen - Returns the length of a string
+  * @s: String to count
+  *
+  * Return: String length
+  */
+int _strlen(const char *s)
+{
+	int c = 0;
+
+	while (*s)
+	{
+		s++;
+		c++;
+	}
+
+	return (c);
 }
