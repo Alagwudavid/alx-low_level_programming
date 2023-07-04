@@ -3,11 +3,11 @@
 #include <udis86.h>
 
 /**
-  * main - ...
-  * @argc: ...
-  * @argv: ...
+  * main - prints opcode of own main function
+  * @argc: has the length of the arguments
+  * @argv: has the arguments
   *
-  * Return: ...
+  * Return: 0
   */
 int main(int argc, char *argv[])
 {
