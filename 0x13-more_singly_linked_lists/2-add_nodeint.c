@@ -1,51 +1,29 @@
 #include <stdlib.h>
-#include <string.h>
 #include "lists.h"
 
 /**
-  * add_node - Adds a new node at the beginning of a list
-  * @head: The original linked list
-  * @str: The string to add to the node
+  * add_nodeint - Adds a new node at the beginning of a linked list
+  * @head: The head of the linked list
+  * @n: The value to add to the new node
   *
-  * Return: The address of the new list or NULL if it failed
+  * Return: The address of the new element, or NULL it failed
   */
-list_t *add_node(list_t **head, const char *str)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-	list_t *temp;
+	listint_t *new_list;
 
-	if (head != NULL && str != NULL)
+	if (head != NULL)
 	{
-		temp = malloc(sizeof(list_t));
-		if (temp == NULL)
+		new_list = malloc(sizeof(listint_t));
+		if (new_list == NULL)
 			return (NULL);
 
-		temp->str = strdup(str);
-		temp->len = _strlen(str);
-		temp->next = *head;
+		new_list->n = n;
+		new_list->next = *head;
+		*head = new_list;
 
-		*head = temp;
-
-		return (temp);
+		return (new_list);
 	}
 
-	return (0);
-}
-
-/**
-  * _strlen - Returns the length of a string
-  * @s: String to count
-  *
-  * Return: String length
-  */
-int _strlen(const char *s)
-{
-	int c = 0;
-
-	while (*s)
-	{
-		s++;
-		c++;
-	}
-
-	return (c);
+	return (NULL);
 }
