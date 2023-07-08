@@ -1,6 +1,6 @@
-#0x14-bit_manipulation
+# 0x14-bit_manipulation
 + Author `Alagwu David`
-+ Intern Software Engineer @Alx Africa
++ Intern Software Engineer `@Alx Africa`
 - Frontend Developer `Freelance`
 >> Reach out
 + E-mail: `Alagwudavid2019@gmail.com` or `Alagwudavid@gmail.com`
