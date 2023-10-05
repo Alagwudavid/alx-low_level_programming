@@ -1,46 +1,28 @@
 #include "main.h"
-
-
+#include <stdblib.h>
 
 /**
- *
- * read_textfile - ...
- *
- * @filename: The source file
- *
- * @letters: Number of letters to reads and prints
- *
- * Return: ...
- *
- **/
-
+ * read_textfile- Read text file print to STDOUT.
+ * @filename: text file being read
+ * @letters: number of letters to be read
+ * Return: w- actual number of bytes read and printed
+ *        0 when function fails or filename is NULL.
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, readed;
-	char *buff = malloc(sizeof(char *) * letters);
+	char *buf;
+	ssize_t fd;
+	ssize_t w;
+	ssize_t t;
 
-
-
-	if (!buff)
-		return (0);
-
-	if (!filename)
-		return (0);
-
-	fd = open(filename, O_RDONLY, 0600);
-
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
+	buf = malloc(sizeof(char) * letters);
+	t = read(fd, buf, letters);
+	w = write(STDOUT_FILENO, buf, t);
 
-
-	readed = read(fd, buff, letters);
-
-	write(STDOUT_FILENO, buff, readed);
-
-	free(buff);
-
+	free(buf);
 	close(fd);
-
-	return (readed);
-
+	return (w);
 }
