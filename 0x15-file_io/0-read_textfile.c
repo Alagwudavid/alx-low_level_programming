@@ -1,5 +1,4 @@
 #include "main.h"
-// #include <stdblib.h>
 
 /**
  * read_textfile- Read text file print to STDOUT.
